@@ -1,0 +1,6 @@
+mip_pi_4p5_big   CR39direct:mimic_unconditional=7.24  CR39direct:mimic_LETge5=23.97
+mip_p_4p5_big    CR39direct:mimic_unconditional=7.47  CR39direct:mimic_LETge5=24.04
+mip_K_4p5_big    CR39direct:mimic_unconditional=7.74  CR39direct:mimic_LETge5=27.80
+mip_pi_10_big    CR39direct:mimic_unconditional=8.24  CR39direct:mimic_LETge5=29.08
+mip_p_10_big     CR39direct:mimic_unconditional=7.79  CR39direct:mimic_LETge5=17.20
+mip_K_10_big     CR39direct:mimic_unconditional=7.73  CR39direct:mimic_LETge5=22.80

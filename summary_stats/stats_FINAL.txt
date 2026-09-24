@@ -1,0 +1,20 @@
+alpha_5p489_big      N=1000000  P_inel=0.000e+00  P_elas=0.000e+00
+alpha_5p489_qgsp     N=1000000  P_inel=0.000e+00  P_elas=0.000e+00
+alpha_6p00_big       N=1000000  P_inel=1.900e-05  P_elas=2.300e-05  f_mimic=0.000
+alpha_6p00_qgsp      N=1000000  P_inel=1.900e-05  P_elas=2.300e-05  f_mimic=0.000
+alpha_7p69_big       N=1000000  P_inel=1.170e-04  P_elas=1.390e-04  f_mimic=0.000
+alpha_7p69_qgsp      N=1000000  P_inel=1.170e-04  P_elas=1.390e-04  f_mimic=0.000
+mip_pi_4p5_big       N=1000000  P_inel=6.340e-04  P_elas=3.520e-04  f_mimic=0.136  CR39direct:mimic=7.24
+mip_pi_4p5_qgsp      N=1000000  P_inel=6.340e-04  P_elas=3.520e-04  f_mimic=0.136  CR39direct:mimic=7.24
+mip_p_4p5_big        N=1000000  P_inel=7.610e-04  P_elas=4.880e-04  f_mimic=0.145  CR39direct:mimic=7.47
+mip_p_4p5_qgsp       N=1000000  P_inel=7.610e-04  P_elas=4.880e-04  f_mimic=0.145  CR39direct:mimic=7.47
+mip_K_4p5_big        N=1000000  P_inel=4.940e-04  P_elas=1.550e-04  f_mimic=0.117  CR39direct:mimic=7.74
+mip_K_4p5_qgsp       N=1000000  P_inel=4.940e-04  P_elas=1.550e-04  f_mimic=0.117  CR39direct:mimic=7.74
+mip_pi_10_big        N=1000000  P_inel=5.680e-04  P_elas=3.040e-04  f_mimic=0.123  CR39direct:mimic=8.24
+mip_pi_10_qgsp       N=1000000  P_inel=5.680e-04  P_elas=3.040e-04  f_mimic=0.123  CR39direct:mimic=8.24
+mip_p_10_big         N=1000000  P_inel=7.440e-04  P_elas=4.060e-04  f_mimic=0.250  CR39direct:mimic=7.79
+mip_p_10_qgsp        N=1000000  P_inel=7.440e-04  P_elas=4.060e-04  f_mimic=0.250  CR39direct:mimic=7.79
+mip_K_10_big         N=1000000  P_inel=5.100e-04  P_elas=1.360e-04  f_mimic=0.133  CR39direct:mimic=7.73
+mip_K_10_qgsp        N=1000000  P_inel=5.100e-04  P_elas=1.360e-04  f_mimic=0.133  CR39direct:mimic=7.73
+mip_ep_4p5_big       N=1000000  P_inel=2.000e-06  P_elas=1.000e-06  f_mimic=0.000  CR39direct:mimic=16.00
+mip_ep_4p5_qgsp      N=1000000  P_inel=2.000e-06  P_elas=1.000e-06  f_mimic=0.000  CR39direct:mimic=16.00
