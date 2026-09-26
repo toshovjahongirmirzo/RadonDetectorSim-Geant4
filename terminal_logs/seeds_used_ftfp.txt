@@ -1,0 +1,10 @@
+alpha_5p489_ftfp_seeded seed=3421545557
+alpha_6p00_ftfp_seeded seed=1943910741
+alpha_7p69_ftfp_seeded seed=1157582581
+mip_pi_4p5_ftfp_seeded seed=195344686
+mip_p_4p5_ftfp_seeded seed=3010181008
+mip_K_4p5_ftfp_seeded seed=1912688217
+mip_ep_4p5_ftfp_seeded seed=1672102544
+mip_pi_10_ftfp_seeded seed=2744389810
+mip_p_10_ftfp_seeded seed=3040737244
+mip_K_10_ftfp_seeded seed=2215575738

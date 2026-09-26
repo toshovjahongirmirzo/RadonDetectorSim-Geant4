@@ -1,0 +1,10 @@
+alpha_5p489_qgsp_seeded seed=3690867173
+alpha_6p00_qgsp_seeded seed=1357020382
+alpha_7p69_qgsp_seeded seed=950399717
+mip_pi_4p5_qgsp_seeded seed=170564491
+mip_p_4p5_qgsp_seeded seed=2281656040
+mip_K_4p5_qgsp_seeded seed=1836409234
+mip_ep_4p5_qgsp_seeded seed=433408936
+mip_pi_10_qgsp_seeded seed=3015137695
+mip_p_10_qgsp_seeded seed=3615396068
+mip_K_10_qgsp_seeded seed=1352254490

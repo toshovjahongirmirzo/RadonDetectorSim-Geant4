@@ -5,16 +5,17 @@
 #include "G4RunManagerFactory.hh"
 #include "G4UImanager.hh"
 #include "G4VModularPhysicsList.hh"
+#include "Randomize.hh"
 #include <cstdlib>
 #include <cstring>
+#include <chrono>
 
 int main(int argc, char** argv)
 {
-  // Usage: RadonDetectorSim <particle> <momentum_or_KE_GeV_or_MeV> <nEvents> <fileStem> [physicsList]
-  // physicsList: "FTFP_BERT" (default) or "QGSP_BERT"
+  // Usage: RadonDetectorSim <particle> <momentum> <nEvents> <fileStem> [FTFP_BERT|QGSP_BERT] [seed]
   if (argc < 5) {
     G4cerr << "Usage: " << argv[0]
-           << " <particle> <momentum> <nEvents> <fileStem> [FTFP_BERT|QGSP_BERT]"
+           << " <particle> <momentum> <nEvents> <fileStem> [FTFP_BERT|QGSP_BERT] [seed]"
            << G4endl;
     return 1;
   }
@@ -25,20 +26,21 @@ int main(int argc, char** argv)
   G4String fileStem     = argv[4];
   G4String physListName = (argc > 5) ? argv[5] : "FTFP_BERT";
 
-  auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial);
+  long seed = (argc > 6)
+    ? std::atol(argv[6])
+    : static_cast<long>(std::chrono::high_resolution_clock::now().time_since_epoch().count());
+  G4Random::setTheSeed(seed);
+  G4cout << ">>> RNG seed for this run: " << seed << G4endl;
 
+  auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial);
   runManager->SetUserInitialization(new DetectorConstruction());
 
   G4VModularPhysicsList* physList = nullptr;
-  if (physListName == "QGSP_BERT") {
-    physList = new QGSP_BERT();
-  } else {
-    physList = new FTFP_BERT();
-  }
+  if (physListName == "QGSP_BERT") physList = new QGSP_BERT();
+  else physList = new FTFP_BERT();
   runManager->SetUserInitialization(physList);
 
   runManager->SetUserInitialization(new ActionInitialization(particleName, momentum, fileStem));
-
   runManager->Initialize();
 
   G4UImanager* UImanager = G4UImanager::GetUIpointer();
@@ -47,7 +49,6 @@ int main(int argc, char** argv)
   UImanager->ApplyCommand("/tracking/verbose 0");
 
   runManager->BeamOn(nEvents);
-
   delete runManager;
   return 0;
 }
